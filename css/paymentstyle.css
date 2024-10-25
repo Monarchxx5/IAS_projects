@@ -1,0 +1,126 @@
+body {
+    font-family: 'Poppins';
+    background-image: url(/images/background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    height: 1000px;
+}
+.pop-up-yes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    left: 28%;
+    top: 15%;
+    z-index: 9999;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.5em;
+}
+.pop-up-yes img{
+    margin: 1em;
+    height: 70%;
+    width: 70%;
+    animation-name: pop-in;
+    animation-duration: 1.5s;
+}
+@keyframes pop-in {
+    from {opacity: 0; transform: scale(0.1);}
+    to {opacity: 1; transform: scale(1);}
+}
+.navbar-brand {
+    display: flex;
+}
+.navbar-brand img{
+    height: 5vh;
+    width: 5vh;
+}
+
+
+p {
+    margin: 0%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: #f8f9fa9d;
+    padding: 30px;
+    border-radius: 30px;
+    outline: solid rgba(0, 0, 0, 0.308) 1px;
+}
+
+.dis {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #7700ff;
+}
+
+.border:focus-within {
+    border: 1px solid #7700ff !important;
+}
+
+.form-select {
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.address .form-control.zip {
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+
+}
+
+.address .form-control.state {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+
+}
+
+
+::placeholder {
+    font-size: 12px;
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 700px;
+        margin: 10px auto;
+    }
+
+    .box-1,
+    .box-2 {
+        max-width: 600px;
+        padding: 20px 90px;
+        margin: 20px auto;
+    }
+
+}
+
+@media (max-width:426px) {
+
+    .box-1,
+    .box-2 {
+        max-width: 400px;
+        padding: 20px 10px;
+    }
+
+    ::placeholder {
+        font-size: 9px;
+    }
+}
